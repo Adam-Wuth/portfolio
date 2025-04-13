@@ -4,7 +4,7 @@ import { faAppStore, faGithub, faGooglePlay } from '@fortawesome/free-brands-svg
 import { } from '@fortawesome/free-solid-svg-icons';
 
 export const navigation = {
-  name: "Hashir",
+  name: "Adam",
   links: [
     {
       title: "About",
@@ -22,15 +22,11 @@ export const navigation = {
       title: "Links",
       link: "/links",
     },
-    {
-      title: "Blog",
-      link: "https://medium.com/@hashirshoaeb",
-    }
   ],
 }
 export const intro = {
-  title: "Hey, I'm Hashir",
-  description: "A Computer Engineer creating mobile apps and static websites.",
+  title: "Hello World! I'm Adam",
+  description: "",
   image: profile.src,
   buttons: [
     {
@@ -40,34 +36,18 @@ export const intro = {
     },
     {
       title: "Resume",
-      link: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
+      link: "https://docs.google.com/document/d/1CjHdPVsuaCCfMzcJ6nm3mWVk01YyEWhL/edit?usp=sharing&ouid=108801549888371947375&rtpof=true&sd=true",
       isPrimary: false,
     },
   ],
 }
 
 export const about = {
-  title: "Who I am",
+  title: "About Me",
   description: [
-    "I graduated from National University of Sciences and Technology (NUST) in 2020 with a degree in Computer Engineering. I kick started my professional career as a mobile application developer working remotely for a UK based startup — Lessgo.",
-    "The tech industry is ever-evolving and I love being able to grow with it, while continually solidifying the fundamentals. I opensource my code from a place of empathy - for future developers, teammates, users, and with accessibility in mind. I also love joining communities, helping and mentoring new developers, and supporting organizations to promote diversity in tech. I’m sharing my programming journey on instagram, helping people who are just getting into the space of programming.",
-    "When I’m not programming, I focus on my hobbies which are: diary writing, doodling, meeting people and growing my network.",
-  ],
-}
-
-export const work = {
-  title: "What I do",
-  cards: [
-    {
-      title: "Mobile App Development",
-      description: "I create pixel perfect iOS and Andriod apps using Flutter.",
-      icons: null,
-    },
-    {
-      title: "Web Development",
-      description: "I create responsive static websites using Reactjs.",
-      icons: null,
-    }
+    "Hello! My name is Adam Wuth, and I am a senior at CU Boulder, graduating with a BS in Computer Science this May. In my time at CU, I have worked with a lot of programming languages, and frameworks, but would say I am best with Python, and C++. ",
+    "Going forward, I am interested in project development, and cybersecurity. I am passionate about creative problem solving, and I am very determined. While I may not have all the answers yet, I am dedicated, hardworking, and always eager to learn and adapt in order to achieve success and contribute to meaningful projects.",
+    "When I’m not programming, I focus on my hobbies which are: running, hiking, and basketball/hockey.",
   ],
 }
 
@@ -75,79 +55,81 @@ export const projects = {
   title: "Projects",
   cards: [
     {
-      title: "StarBook",
-      description: "A digital diary and mood tracking app that helps you in keeping track of your mood and productivity throughout the month/year.",
-      icons: [
-        {
-          icon: faAppStore,
-          link: "https://apps.apple.com/us/app/starbook-journal-ai-diary/id1552418289",
-        },
-        {
-          icon: faGithub,
-          link: "https://github.com/hashirshoaeb/star_book",
-        },
-      ]
+      title: "Placeholder",
+      description: "I am trying to figure out how to have the game of my project here and the assignment says we dont have to be completely done yer",
+      icons: null
+      // icons: [
+      //   {
+      //     icon: faGithub,
+      //     link: "https://github.com/hashirshoaeb/portfolio",
+      //   },
+      // ]
+    },
+  ],
+}
+
+export const work = {
+  title: "My Interests",
+  cards: [
+    {
+      title: "PC Building",
+      image: "/pc.png",
+      description: "I have always loved computers and working with computers. This is why I went into computer science, but it is also why I am into building computers and keyboards. This is my personal PC. This project was my first time working with liquid cooling, and it was a challenge for sure, but I am very proud of the results!",
+      icons: null,
     },
     {
-      title: "QuranTalk",
-      description: "An emotional well being and mental health app. The app helps people to navigate their emotions in the light of the Quran.",
-      icons: [
-        {
-          icon: faAppStore,
-          link: "https://apps.apple.com/us/app/qurantalk/id1563425149",
-        },
-        {
-          icon: faGooglePlay,
-          link: "https://play.google.com/store/apps/details?id=com.ayahemotion.quran_talk",
-        },
-      ]
+      title: "Running",
+      image: "/running.png",
+      description: "In 2021, I ran a tough mudder planning to have it as just a one off event, but I fell in love with running. Since then, I have run the 15k tough mudder 3 times, the Boulderthon, and the Colorado Springs Marathon. There is something so rewarding about setting your mind to something, and working hard to complete your goals. I recently started training for the IRONMAN 70.3 Boulder 2026!",
+      icons: null,
     },
     {
-      title: "Portfolio",
-      description: "A portfolio website template that helps you showcase your work, projects and skills as a software developer or freelancer.",
-      icons: [
-        {
-          icon: faGithub,
-          link: "https://github.com/hashirshoaeb/portfolio",
-        },
-      ]
-    },
+      title: "Rock Climbing",
+      image: "/climbing.png",
+      description: "It is important to have hobbies that get you outdoors and active. For me, this takes the form of rock climbing. Last summer I went on a climbing trip to Utah, and it was a blast. The photo is from a weird angle, I was only bouldering about 15 feet up, but I can’t wait to get out to Utah again!",
+      icons: null,
+    }
   ],
 }
 
 export const contact = {
   title: "Get in touch",
-  description: "Coffee Chat! Please do not hesitate to schedule a meeting. Alternatively, feel free to reach out directly by email at hashirshoaeb@gmail.com.",
+  description: "Feel free to reach out directly by email at adam.wuth@colorado.edu, or on Linkedin. Alternatively, to see what I'm up to, check out my Instagram",
   buttons: [
     {
       title: "Email Me",
-      link: "mailto:hashirshoaeb@gmail.com",
+      link: "mailto:adam.wuth@colorado.edu",
       isPrimary: true,
     },
     {
-      title: "Schedule Meeting",
-      link: "https://topmate.io/hashirshoaeb",
-      isPrimary: false,
+      title: "LinkedIn",
+      link: "https://www.linkedin.com/in/adam-wuth/",
+      isPrimary: true,
     },
+    {
+      title: "Instagram",
+      link: "https://www.instagram.com/aj.wuth/",
+      isPrimary: true,
+    }
   ]
 }
 
 // SEARCH ENGINE 
 export const SEO = {
   // 50 - 60 char  
-  title: "Hashir Shoaib | Computer Engineer | Flutter | Reactjs developer",
-  description: "I create mobile apps and static websites. I graduated from National University of Sciences and Technology (NUST) in 2020 with a degree in Computer Engineering.",
+  title: "Adam Wuth | Software Developer",
+  description: "I graduate this May from the University of Colorado Boulder with a BS in Computer Science.",
   image: profile.src,
 }
 
 export const links = {
   image: profile.src,
-  title: "@hashirshoaeb",
-  description: "Computer Engineer | Flutter | Reactjs Developer",
+  title: "@adamwuth",
+  description: "Sofware Developer",
   cards: [
     {
       title: "My website",
-      link: "https://hashirshoaeb.com/",
+      link: "https://Adam-Wuth.github.io/portfolio/",
     },
     {
       title: "QuranTalk App",
@@ -158,12 +140,12 @@ export const links = {
       link: "https://starbook.dev/",
     },
     {
-      title: "My GitHub",
-      link: "https://github.com/hashirshoaeb/",
+      title: "My Instagram",
+      link: "https://www.instagram.com/aj.wuth/",
     },
     {
       title: "My LinkedIn",
-      link: "https://www.linkedin.com/in/hashirshoaeb/",
+      link: "https://www.linkedin.com/in/adam-wuth/",
     },
   ]
 }

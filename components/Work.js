@@ -12,6 +12,7 @@ export const Skills = ({ title, cards }) => {
 						<Card
 							key={index}
 							title={value.title}
+							image={value.image}
 							description={value.description}
 							link={value.link} />
 					))}
@@ -43,10 +44,16 @@ export const Projects = ({ title, cards }) => {
 	);
 }
 
-export const Card = ({ title, description, icons }) => {
+export const Card = ({ title, description, image, icons }) => {
 	return (
 		<div className="card py-3 px-3 mx-sm-4 my-4 card-work" style={{ width: "20rem" }}>
 			<h4 className="text-primary">{title}</h4>
+			{image && (
+				<img
+					src={image}
+					alt={title}
+					className="w-100 my-3 rounded" />
+			)}
 			<p className="text-dark">{description}</p>
 			<div className="text-end">
 				{icons && icons.map((value, index) => (

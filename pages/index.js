@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { Nav } from '../components/Navbar';
 import { Intro, About } from '../components/Intro';
-import { Skills, Projects } from '../components/Work';
+import { Projects, Skills } from '../components/Work';
 import { Footer, Contact } from '../components/Footer';
 import { about, contact, intro, navigation, projects, SEO, work } from '../config/config';
 import { Header } from '../components/Header';
@@ -24,13 +24,13 @@ export default function Home() {
         title={about.title}
         description={about.description}
       />
-      <Skills
-        title={work.title}
-        cards={work.cards}
-      />
       <Projects
         title={projects.title}
         cards={projects.cards}
+      />
+      <Skills
+        title={work.title}
+        cards={work.cards}
       />
       <Contact
         title={contact.title}
