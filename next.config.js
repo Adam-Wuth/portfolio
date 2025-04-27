@@ -1,37 +1,22 @@
-const isProd = process.env.NODE_ENV === 'production'
-/*
- * Gets the BASE_PATH from the command used to start this app.
- * If BASE_PATH is specified but it does not start with a "/" 
- * then add it. 
- * https://stackoverflow.com/questions/60452054/nextjs-deploy-to-a-specific-url-path
- */
-function getBasePath() {
-  var basePath = undefined
+/** @type {import('next').NextConfig} */
 
-  if (isProd && process.env.BASE_PATH) {
-    if (process.env.BASE_PATH.startsWith("/")) {
-      basePath = process.env.BASE_PATH;
-    } else {
-      basePath = "/" + process.env.BASE_PATH;
-    }
-  }
-  return basePath
-}
+// Check if we are building for production
+const isProd = process.env.NODE_ENV === 'production';
 
-const basePath = getBasePath()
-console.warn(
-  // "Are you publishing to <username>.github.io ? then [basePath] should be empty.\n" +
-  // "Are you publishing to <username>.github.io/<repository> ? then [basePath] should be /<repository>.\n" +
-  `P.S. [basePath] is {${basePath}}`
-)
+// Set the basePath if deploying to a subfolder like /portfolio
+const basePath = isProd ? '/portfolio' : '';
 
 const nextConfig = {
+  output: 'export', // ✅ Important for static export
   reactStrictMode: true,
   basePath: basePath,
   assetPrefix: basePath,
+  images: {
+    unoptimized: true, // ✅ Important for static hosting (Next.js image optimization won't work otherwise)
+  },
   publicRuntimeConfig: {
     basePath: basePath,
   },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
