@@ -67,7 +67,7 @@ export const projects = {
         {
           icon: faGithub,
           link: "https://github.com/Adam-Wuth/AI-Mancala-Player/tree/main",
-          //test
+          //test 2
         },
       ]
     },
