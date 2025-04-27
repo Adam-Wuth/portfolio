@@ -18,10 +18,6 @@ export const navigation = {
       title: "Contact",
       link: "#contact",
     },
-    {
-      title: "Links",
-      link: "/links",
-    },
   ],
 }
 export const intro = {
@@ -55,15 +51,34 @@ export const projects = {
   title: "Projects",
   cards: [
     {
-      title: "Placeholder",
-      description: "I am trying to figure out how to have the game of my project here and the assignment says we dont have to be completely done yer",
-      icons: null
-      // icons: [
-      //   {
-      //     icon: faGithub,
-      //     link: "https://github.com/hashirshoaeb/portfolio",
-      //   },
-      // ]
+      title: "Pathfinding Robot",
+      description: "This is the final project I made in my robotics course at CU. It uses lidar to map an enviornemnt, and then A* search and image recognition to find the best path for moving objects from one location to another. It was coded in webots, using python",
+      icons: [
+        {
+          icon: faGithub,
+          link: "https://github.com/Adam-Wuth/Mapping-and-Pathfinding-Robot",
+        },
+      ]
+    },
+    {
+      title: "AI Mancala Player",
+      description: "This is the final project I made in my AI course at CU.Using a game tree with a variable depth (typically 5 or less), and a utility function of the difference of stones in each of the players pits, it would perform a min-max decision to find and perform the best move available. A second AI player was created, using an alpha-beta pruning algorithm instead for faster games. It is coded in Python, using modified code from the aima library",
+      icons: [
+        {
+          icon: faGithub,
+          link: "https://github.com/Adam-Wuth/AI-Mancala-Player/tree/main",
+        },
+      ]
+    },
+    {
+      title: "Amazon Review Classificiation Models",
+      description: "This project is coded in python using Pytorch. Using the McAuley-Lab/Amazon-Reviews-2023 dataset, a bigram, trigram, and recurrent network are trained to see which is able to classify reviews into their respective star categories based off of the review text. ",
+      icons: [
+        {
+          icon: faGithub,
+          link: "https://github.com/Adam-Wuth/NLP-project",
+        },
+      ]
     },
   ],
 }
