@@ -1,5 +1,8 @@
 
 import profile from './profile.png';
+import pc from './pc.png';
+import climbing from './climbing.png';
+import running from './running.png';
 import { faAppStore, faGithub, faGooglePlay } from '@fortawesome/free-brands-svg-icons';
 import { } from '@fortawesome/free-solid-svg-icons';
 
@@ -43,7 +46,7 @@ export const about = {
   description: [
     "Hello! My name is Adam Wuth, and I am a senior at CU Boulder, graduating with a BS in Computer Science this May. In my time at CU, I have worked with a lot of programming languages, and frameworks, but would say I am best with Python, and C++. ",
     "Going forward, I am interested in project development, and cybersecurity. I am passionate about creative problem solving, and I am very determined. While I may not have all the answers yet, I am dedicated, hardworking, and always eager to learn and adapt in order to achieve success and contribute to meaningful projects.",
-    "When I’m not programming, I focus on my hobbies which are: running, hiking, and basketball/hockey.",
+    "When I’m not programming, I focus on my hobbies which are: running, climbing, and basketball/hockey.",
   ],
 }
 
@@ -89,19 +92,19 @@ export const work = {
   cards: [
     {
       title: "PC Building",
-      image: "/pc.png",
+      image: pc.src,
       description: "I have always loved computers and working with computers. This is why I went into computer science, but it is also why I am into building computers and keyboards. This is my personal PC. This project was my first time working with liquid cooling, and it was a challenge for sure, but I am very proud of the results!",
       icons: null,
     },
     {
       title: "Running",
-      image: "/running.png",
+      image: running.src,
       description: "In 2021, I ran a tough mudder planning to have it as just a one off event, but I fell in love with running. Since then, I have run the 15k tough mudder 3 times, the Boulderthon, and the Colorado Springs Marathon. There is something so rewarding about setting your mind to something, and working hard to complete your goals. I recently started training for the IRONMAN 70.3 Boulder 2026!",
       icons: null,
     },
     {
       title: "Rock Climbing",
-      image: "/climbing.png",
+      image: climbing.src,
       description: "It is important to have hobbies that get you outdoors and active. For me, this takes the form of rock climbing. Last summer I went on a climbing trip to Utah, and it was a blast. The photo is from a weird angle, I was only bouldering about 15 feet up, but I can’t wait to get out to Utah again!",
       icons: null,
     }
